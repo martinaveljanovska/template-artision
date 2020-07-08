@@ -1,0 +1,13 @@
+:root{
+  --dark: #0c091b;
+}
+
+
+$font1: "Playfair Display", sans-serif;
+$font2: "Roboto", sans-serif;
+
+
+
+@mixin transition {
+  transition:0.3s all  ease-out;
+}

@@ -1,0 +1,117 @@
+.hide{
+  display: none !important;
+}
+.flex{
+  display: flex!important;
+}
+
+.overflow{
+  overflow: hidden;
+}
+
+p{
+  line-height: 1.5em;
+  color: #b1b1b1;
+  font-weight: 300;
+}
+
+h1, h2, h3 {
+  font-family: $font1;
+}
+
+.container-title{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+
+
+  &.center::after{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.button{
+  font-family: inherit;
+  color: #fff;
+  border: 1px solid #fff;
+  text-decoration:none;
+  padding: 15px 25px;
+  font-size: inherit;
+  font-weight: 700;
+  margin: 10px;
+  background-color: transparent;
+  color: #fff;
+  font-family: $font1;
+  position: relative;
+  cursor: pointer;
+
+@include transition;
+
+&:hover{
+  background-color: #fff;
+  color: #222;
+  border-color: #fff;
+}
+
+} // button
+
+.cta-btn{
+  @extend .button;
+  background-color: #fff !important;
+  color: #222 !important;
+
+  @include transition;
+
+  &:hover, &:active, &:focus{
+    background-color: #dadada !important;
+  }
+}
+
+
+a{
+  text-decoration: none;
+}
+
+
+.divider{
+  display: block;
+  height: 3px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+a.link{ 
+  text-decoration: none;
+  font-style: italic;
+  color: #fff;
+}
+
+//back to top button
+.back-to-top {
+background: none;
+display: none;
+margin: 0;
+position: fixed;
+bottom: 150px;
+right: 23px;
+width: 35px;
+height: 35px;
+z-index: 100;
+text-decoration: none;
+color: #fff;
+opacity: .5;
+ background-color: rgba(9, 9, 9, 0.6);
+ border-radius: 60px;
+@include transition;
+  i{
+      font-size: 38px;
+      position: relative;
+      left: -1.5px;
+      top: -1.5px;
+  }
+
+  &:hover{
+    opacity: 1;
+  }
+}
